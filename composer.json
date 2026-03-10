@@ -1,0 +1,38 @@
+{
+    "name": "psc-acme/sanitizer-user",
+    "description": "Package sanitizer-user for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\SanitizerUser\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "illuminate/support": "^11.0",
+        "league/flysystem": "^3.0",
+        "laravel/framework": "^11.0",
+        "nesbot/carbon": "^2.72"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
